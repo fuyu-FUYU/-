@@ -1,0 +1,36 @@
+/* pages/my/my.wxss */
+.inp{
+  border: solid 1rpx #000;
+  width: 75%;
+  height: 85rpx;
+  margin-left: 20rpx;
+}
+.bnt{
+  width: 20%;
+  background: #ddd;
+}
+.top{
+  display: flex;
+  justify-content: space-around;
+}
+.top1{
+  display: flex;
+  border: solid #ddd 1rpx;
+  padding: 10rpx;
+  justify-content: space-between;
+}
+.top1 text{
+  margin-top: 20rpx;
+}
+.top1 checkbox{
+  margin-top: 20rpx;
+}
+h1{
+  margin-left: 35%;
+  font-size: 60rpx;
+}
+.one{
+  display: flex;
+  padding: 20rpx;
+  justify-content: space-between;
+}

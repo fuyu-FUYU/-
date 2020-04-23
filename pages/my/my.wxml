@@ -1,0 +1,30 @@
+<view>
+    <h1>TdoList</h1>
+    <view class="top">
+        <input class="inp"  bindinput='getval' value='{{val}}' placeholder="请输入您要添加的内容">
+        </input> <button class="bnt" bindtap="add">添加</button>
+    </view>
+    
+    <view class="one">
+        <text>未完成</text>   <text>{{list.length}}</text>     
+    </view>
+    <view  wx:if="!cc" class="top1" wx:for="{{list}}" wx:key="{{index}}">
+      <checkbox checked="{{item.checked}}"  bindtap="change" data-index="{{index}}" data-item="{{item}}"></checkbox>
+      <text>{{item.txt}}</text>
+
+      <button class="bnt" bindtap="del" data-index="{{index}}">删除</button>
+    </view>
+
+
+
+    <view class="one">
+        <text>已完成</text>   <text>{{user.length}}</text>     
+    </view>   
+    <view  wx:if="cc" class="top1" wx:for="{{user}}" wx:key="{{index}}">
+      <checkbox checked="{{item.checked}}" bindtap="changes" data-index="{{index}}" data-item="{{item}}"></checkbox>
+      <text>{{item.txt}}</text>
+
+      <button class="bnt" bindtap="del1" data-index="{{index}}">删除</button>
+    </view>
+
+</view>
